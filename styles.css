@@ -53,6 +53,8 @@
 }
 
 @media screen and (max-width:750px){
+
+
     .container{
         grid-template-columns: none;
         width: 90%;
@@ -76,50 +78,61 @@
 
 @media screen and (max-width:375px) {
 
-
 .container{
+        grid-template-columns: none;
         width: 90%;
-        height:100vh;
-       /*  display: flex; */
-       /*  flex-wrap: wrap; */
+        height:110vh; 
         margin:0 auto;
+        display: flex;
+        
+     
+        
     }
-    
+            
 .sensors{
-    width: 100vh;
-    height:50vh; /*antes height:50%;  ahoa auto */
+    width: 98%;
+    height: 100vh; 
     background: darkgrey;
-
+   
 }
 
 .realtime{
     width: 100%;
-    height: 25%;
+    height: 15%;
     background: red;
+
+
 }
 
 
 .gauge{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    justify-content:center;
+    align-items: start;
+    padding-top: none;
+    
     
 }
 
 
 .gauge-right{
-    width:100%;
-    height: 100%;
+    width: 100%;
+    height: 40%;
     background-color: beige;
+    margin-top: 0;
     
 }
 
+
 .gauge-left{
     width: 100%;
-    height: 100%;
-    background-color: palevi;
-    margin-bottom: 30%;
+    height:40%;
+    background-color: none;
+    
+  
 
 }
 
-}
 
+}
