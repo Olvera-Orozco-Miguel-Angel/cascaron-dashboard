@@ -33,8 +33,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 2.5%;
+   margin-top: 10px;
+    
 }
 
 .gauge-right{
@@ -108,11 +108,8 @@
 .gauge{
     width: 100%;
     height: 80vh;
+  
    
-   
-   
-    
-    
 }
 
 
@@ -135,4 +132,72 @@
 }
 
 
+}
+
+
+/* aquí estan los estilos para lo que es el bpm280 y el tds */
+/*este contendor padre de toda la sección*/
+.weather-info{
+    width: 98%;
+    height: 100%;
+    justify-self: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: green;
+
+}
+/*este el contendor padre  tanto para del bmp280 y de la precipitación por separado ambos separados*/
+.weather-info__real-time{
+    width: 49%;
+    height: 100%;
+    background: blue;
+
+}
+.weather-info__real-time-data{
+    width: 100%;
+    height: 30%;
+    background: black;
+    
+}
+
+.weather-info__real-time-container-data{
+    
+    width: 100%;
+height: 70%;
+    background: burlywood;
+    margin-top: 10px;
+
+   
+}
+
+@media screen and (max-width:375px) {
+    .weather-info{
+        height: 100vh;
+    }
+    .weather-info__real-time{
+        width: 100%;
+        height: 220px;
+        background: blue;
+    
+    }
+
+    .weather-info__real-time-data{
+        width: 100%;
+        height: 82.5px;
+        background: black;
+        
+    }
+
+    
+.weather-info__real-time-container-data{
+    
+    width: 100%;
+height: 220px;
+    background: burlywood;
+    margin-top: 10px;
+
+   
+}
 }
